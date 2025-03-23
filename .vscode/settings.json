@@ -1,0 +1,11 @@
+{
+    "Lua.diagnostics.globals": [
+        "nome",
+        "idade",
+        "exemplo_string",
+        "exemplo_numero",
+        "exemplo_booleano",
+        "exemplo_nil",
+        "saudacao"
+    ]
+}
