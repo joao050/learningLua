@@ -22,4 +22,58 @@ local name = "Marcos"
 -- local nome_da_variavel = valor
 print("Nome: ", name)
 
+-- condicional if / elseif / else
+-- Exemplo >>
+local idade = 18
 
+if idade > 18 then -- then é obrigatório
+    print("Maior de idade.")
+elseif idade >= 12 then -- then é obrigatório
+    print("É um adolecente.")
+else
+    print("É uma criança.")
+end -- fecha o bloco condicional
+
+-- Operadores condicionais
+-- == >> igual a
+-- ~= >> diferente de
+-- > >> maior que
+-- < >> menor que
+-- <= >> menor ou igual a
+-- >= >> maior ou igual a 
+
+-- Opeeradores Lógicos
+-- and : E(idade < 19 and idade > 15)
+-- or : Ou(idade < 19 or idade > 15)
+-- not : Não, negação
+
+-- Estruturas de repetição
+
+-- **while
+
+local i = 1
+while i <= 5 do -- se a condição for falça desde o começo não é executado
+    print(i)
+    i = i + 1 -- incremento ou decremento
+end
+
+
+-- **repeat... until
+
+local j = 1
+repeat -- é executado pelo menos uma vez
+    print(j)
+    i = i + 1 -- incrememnto ou decremento
+until j >= 10 -- quando a condição for verdadeira o loop para
+
+
+-- **for
+
+-- recomendado quando sabemos quantas vezes deve repetir
+-- estrutura:
+-- for variavel = início, fim, passo do
+-- código
+-- end
+for n = 1, 10 do
+    print(n)
+end
