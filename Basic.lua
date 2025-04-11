@@ -133,3 +133,68 @@ print("inverter: " .. string.reverse(rev))
 \' : aspas simples
 \" : aspas duplas
 ]]
+
+-- (Arrays)Tabelas**
+
+-- declaração
+local numeros = {1, 2, 3, 4, 5}
+print(numeros) -- Exibe a referência da tabela (endereço de memória)
+-- diferente de c, em lua o indece da tablea começa com 1 e não 0
+print(#numeros) -- o tamanho da tabela
+
+-- Acessar elementos
+
+local frutas = {"banana", "goiaba", "uva"}
+print(frutas[1])
+print(frutas[2])
+
+frutas[2] = "melancia" -- substitui os valores
+print(frutas[2])
+
+table.insert(frutas, "tomate") -- 'table.insert()' adiciona um novo elemento na ultima posição
+
+table.insert(frutas, 2, "goiaba") -- adiciona "goiaba" na posição 2
+
+table.remove(frutas) -- remove o ultimo elemento
+
+table.remove(frutas, 1) -- remove um o elemento que esta na primeira posição
+
+-- Percorrendo o vetor com loops
+
+-- Tabela numerica
+local nums = {10, 20, 30, 40, 50}
+for i = 1, #nums do
+    print(i.. ": " .. nums[i])
+end
+
+-- Tabela que não tem indeces numericos
+local dados = {nome = "João", idade = 21, sexo = "M"}
+for chave, valor in pairs(dados) do
+    print(chave.. ": " .. valor)
+end
+-- quando ele percorre a tabela 'chave, valor ' chave vai ser o 'nome' e valor vai ser 'joão'
+-- 'pairs()' percorre todo o vetor quando as chaves (os indices = nome, idade, sexo...) não são numeros
+
+-- Tabelas com indeces numericos
+-- usando ipairs
+local obj = {"lapis", "bola", "canudo"}
+for i, objeto in ipairs(obj) do -- 'i' são os indeces e 'objeto' serão os valores
+    print(i..": ".. objeto)
+end
+
+-- Tabelas associativas ou dicionários
+local pessoa ={
+    name = "Mario",
+    idade = 14,
+    vivo = "Sim"
+}
+print(pessoa.name) -- Mario
+print(pessoa["idade"]) -- 14
+
+-- Matriz**
+local matriz = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+}
+print(matriz[2][3]) -- Saída: 6
