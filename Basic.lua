@@ -50,8 +50,8 @@ end -- fecha o bloco condicional
 -- >= >> maior ou igual a 
 
 -- Opeeradores Lógicos
--- and : E(idade < 19 and idade > 15)
--- or : Ou(idade < 19 or idade > 15)
+-- and : E(idade < 19 and idade > 15) (retorna o primeiro se for false, se não for retorna o segundo)
+-- or : Ou(idade < 19 or idade > 15) (retona o frimeiro se NÃO for false, se não for retorna o segundo)
 -- not : Não, negação
 
 -- Estruturas de repetição
